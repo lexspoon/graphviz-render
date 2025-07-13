@@ -1,0 +1,12 @@
+#!/bin/bash
+# Create a ZIP file for distribution
+
+set -e
+
+zip graphviz-render.zip \
+  deps/viz-standalone.js \
+  graphviz_render.js \
+  images/graphviz_32.png \
+  images/graphviz_128.png \
+  manifest.json \
+  worker.js

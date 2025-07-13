@@ -1,0 +1,7 @@
+#!/bin/bash
+# Download dependencies that are not checked into GitHub
+
+set -e
+
+mkdir -p deps
+curl -L https://github.com/mdaines/viz-js/releases/download/release-viz-3.14.0/viz-standalone.js > deps/viz-standalone.js
